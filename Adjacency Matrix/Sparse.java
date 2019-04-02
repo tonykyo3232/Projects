@@ -1,9 +1,6 @@
 //-----------------------------------------------------------------------------
 //Sparse.java
 //Name: Tung-Lin Lee
-//ID: 1671967
-//CruzId: tlee76
-//HW: pa3
 //This file will test the Matrix ADT operation in Matix.java
 //-----------------------------------------------------------------------------
 
