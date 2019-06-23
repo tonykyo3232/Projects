@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title> My Website </title>
+	<!-- <link herf="C:\Users\Tony\Desktop\Projects\css\style.css" rel="stylesheet" type="text/css"> doesn't work-->
+
+	<!-- Alternative way to import CSS to html-->
+	<style>
+	*,html,body /* '*'' means univerisal selector */
+	{
+		margin:0;
+		padding: 0;
+	}
+
+	header
+	{
+		background-color:darkturquoise;
+		height: 112px;
+		line-height:112px;
+	}
+
+	ul
+	{
+		list-style: none;
+	}
+
+	ul li /* to do so since li is inside ul */
+	{
+		display:inline-block; /* place every clickable word in one line */
+	}
+
+	header nav
+	{
+		float: right; /*place the clickable word to the right */
+	}
+
+	.logo img /* '. mean it's the class */
+	{
+		margin-top: 30px;
+	}
+
+	header nav ul li a
+	{
+		padding-right: 30px; /* putting spaces between the options */
+		font-weight: bold;
+		color:white;
+		transition: all 0.5s ease-in; /*make it smooth*/
+	}	
+
+	header nav ul li a:hover
+	{
+		/* set up color when about to click it */
+		text-decoration: :none;
+		color:red;
+	}
+
+	.img1
+	{
+		background-image: /*linear-gradient(rgba(0,0,0,0,2),rgba(0,0,0,0,7)),*/url(image/slider1.jpg);
+		background-size: 100% 100%;
+	}
+
+	.img2
+	{
+		background-image: url(image/slider2.jpg);
+		background-size: 100% 100%;
+	}
+
+	.slider,.slider ul, .slider ul li
+	{
+		height: 710px;
+		width: 100%;
+		color: white;
+		text-align: center;
+	}  
+
+	.slider
+	{
+		font-weight: bold;
+	}
+
+	</style>
+
+	<!-- import link of Font Awesome 4 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/caroufredsel.js" type="text/javascript"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header>
+	<div class = "container">
+		<div class = "row">
+			<a href="" class="logo"> <img src="image/logo-2.jpg" width="200" height="80"></a>
+			<nav>
+				<ul> <!-- ul means selector -->
+					<li><a href="">Home</a></li>      <!-- Use li to make it clickable -->
+					<li><a href="">work</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Client</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+	<section class="slider">
+		<ul class ="slider-carousel">
+			<li class="img1">
+				<h2>UC Santa Cruz <span>(UCSC)</span></h2>
+				<p> We believe in creative always</p>
+				<i class="fa fa-amazon"></i>
+				<i class="fa fa-android"></i>
+				<i class="fa fa-windows"></i>
+				<p><br>
+					Computer Science student of University of California, Santa Cruz 
+				</p><br>
+				<a href="" class="btn btn-half">Get started</a>
+				<a href="" class="btn btn-full">Buy now</a>
+			</li>
+			<li class="img2">
+			<h2> The beauty of nature</h2>
+			<p><br>
+					I enjoy the environment of the campus.
+			</p><br>
+			</li>
+
+	</ul>
+	</section>
+	<script src="js/main.js" type="text/javascript"></script> <!-- link to main.js --> 
+</body>
+</html>
+
